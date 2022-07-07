@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Button, Modal, Popconfirm, Spin, Typography } from 'antd'
@@ -121,11 +122,38 @@ export default function GamePage() {
     navigate('/game')
   }
 
+  // const dummy = [1,2,3,4,5,6,7,8];
+  
+  const arr = [];
+
+  for (let i = 0; i <= 100; i += 2) {
+    arr.push(
+      <div style={{
+        display: 'inline-block',
+        padding: '10px',
+        margin: '15px',
+      }}>
+        <div style={{width: '100px', height: '100px', margin: 5, 
+        background: "cyan",}}>{i}</div>
+        <div style={{width: '100px', height: '100px', marginTop: 80, 
+        background: "cyan",}}>{i + 1}</div>
+        {/* {dummy[i+1] && <div>{dummy[i+1]}</div>} */}
+      </div>
+    );
+  }
+
   return (
     <Spin spinning={isLoading}>
       <article id="game-page" style={{ backgroundImage: `url(${bgHome})` }}>
         <div className="wellcome">Xin chào - {user.userName} </div>
-        <Swiper
+        <div className='round-container' style={{ display: 'flex', overflow: 'auto', maxWidth: '100vw' }}>
+          {
+            arr.map(item => {
+              return item;
+            })
+          }
+        </div>
+        {/* <Swiper
           pagination={{
             dynamicBullets: true,
           }}
@@ -156,7 +184,7 @@ export default function GamePage() {
               </section>
             </SwiperSlide>
           ))}
-        </Swiper>
+        </Swiper> */}
 
         {isUnlockModalVisible && (
           <Modal
