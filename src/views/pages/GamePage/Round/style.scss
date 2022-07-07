@@ -1,0 +1,123 @@
+#round-page{
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -3px 15%;
+  position: relative;
+
+  .round-question{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 60px;
+
+    .number-question{
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 240px;
+      color: #fff;
+      font-size: 36px;
+      font-weight: 600;
+      font-family: 'Caveat', cursive;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .title-question{
+      width: 50%;
+      padding: 10px;
+      border-radius: 30px;
+      background: rgba(0,0,0,0.2);
+      margin: 30px auto 0;
+      color: #fff;
+      font-weight: 600;
+      text-align: center;
+      font-size: 20px;
+      font-style: italic;
+    }
+
+    .detail-question{
+      width: 60%;
+      padding: 30px;
+      border-radius: 30px;
+      background: #00a7e7;
+      min-height: 200px;
+      color: #fff;
+      font-size: 20px;
+      margin: 30px auto 0;
+      border: 10px solid #fff;
+      box-shadow: 5px 10px 15px rgb(0 0 0 / 20%);
+    }
+
+    .result{
+      width: 60%;
+      margin: 30px auto 0;
+      display: flex;
+      justify-content: space-between;
+
+      .item{
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 600;
+        font-family: 'Caveat', cursive;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+        color: #000;
+        background: #d5d5d5;
+        cursor: pointer;
+        opacity: 0.7;
+
+        &.active{
+          background: #cd0000;
+          color: #fff;
+          opacity: 1;
+        }
+      }
+    }
+
+    .next{
+      margin-top: 30px;
+      text-align: center;
+
+      button{
+        width: 150px;
+        border-radius: 30px;
+      }
+    }
+  }
+
+  .back-to-round{
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    a{
+      display: inline-block;
+      color: #fff;
+      font-size: 18px;
+      border: 1px solid;
+      padding: 10px;
+      border-radius: 5px;
+      transition: all .2s;
+
+      &:hover{
+        border: 1px solid #cd0000;
+        background: #fff;
+        color:#cd0000;
+      }
+    }
+  }
+}
+
+.star-result{
+  text-align: center;
+  span{
+    color: #ebeb00;
+    font-size: 48px;
+  }
+}
+

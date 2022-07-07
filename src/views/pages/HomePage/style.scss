@@ -1,0 +1,127 @@
+main{
+  background: #00b4ff;
+}
+
+#home-page{
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -3px 15%;
+  position: relative;
+
+  .img-sun{
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 130px;
+    opacity: 0.8;
+  }
+
+  .house{
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .spider{
+      position: absolute;
+      left: 80px;
+      top: 50%;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .silk{
+        width: 1px;
+        background-color: #000;
+        height: 40px;
+      }
+
+      img{
+        width: 30px;
+        max-width: 30px;
+        margin-top: -15px;
+      }
+    }
+  }
+
+  .main-img{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+
+    img{
+      width: 450px;
+    }
+  }
+
+  .ballon-img{
+    position: absolute;
+    left: 50%;
+    bottom: 300%;
+    img{
+      width: 300px;
+    }
+  }
+
+  .focus-login{
+    position: absolute;
+    right: 150px;
+    top: 30%;
+    max-width: 400px;
+
+    .title{
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgb(226, 226, 226);
+      border-radius: 30px;
+      padding: 10px 30px;
+      font-size: 24px;
+      font-family: 'Caveat', cursive;
+      margin-bottom: 10px;
+    }
+
+    .circle{
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgb(226, 226, 226);
+      position: absolute;
+      left: -30px;
+      bottom: -20px;
+
+      &:nth-child(2){
+        width: 30px;
+        height: 30px;
+        left: -20px;
+        top: 60px;
+      }
+    }
+
+    .action{
+      width: 150px;
+      border: none;
+      border-radius: 100px;
+      width: 100%;
+      text-align: center;
+
+      button{
+        width: 150px;
+        height: 100%;
+        border-radius: 100px;
+        text-transform: uppercase;
+        font-weight: bold;
+        &:nth-child(1){
+          margin-right: 20px;
+        }
+
+        span{
+          font-size: 28px;
+          line-height: 0;
+        }
+      }
+    }
+  }
+}

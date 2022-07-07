@@ -1,0 +1,84 @@
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes goUp {
+  0% {
+    bottom: 45%;
+    opacity: 1;
+  }
+
+  75%  {
+    bottom: 150%;
+  }
+
+  100% {
+    bottom: 300%;
+    opacity: 0;
+  }
+}
+
+@keyframes releaseSilk {
+  from {
+    height: 40px;
+  }
+
+  to {
+    height: 100px;
+  }
+}
+
+@keyframes moveForward {
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: 50%;
+  }
+}
+
+.rotating {
+  -webkit-animation: rotating 10s linear infinite;
+  -moz-animation: rotating 10s linear infinite;
+  -ms-animation: rotating 10s linear infinite;
+  -o-animation: rotating 10s linear infinite;
+  animation: rotating 10s linear infinite;
+}
+
+.goUp {
+  -webkit-animation: goUp 4s linear 1;
+  -moz-animation: goUp 4s linear 1;
+  -ms-animation: goUp 4s linear 1;
+  -o-animation: goUp 4s linear 1;
+  animation: goUp 4s linear 1;
+}
+
+.releaseSilk{
+  -webkit-animation: releaseSilk 2s linear infinite;
+  -moz-animation: releaseSilk 2s linear infinite;
+  -ms-animation: releaseSilk 2s linear infinite;
+  -o-animation: releaseSilk 2s linear infinite;
+  animation: releaseSilk 2s linear infinite;
+}
+
+.moveForward{
+  -webkit-animation: moveForward 2s linear 1;
+  -moz-animation: moveForward 2s linear 1;
+  -ms-animation: moveForward 2s linear 1;
+  -o-animation: moveForward 2s linear 1;
+  animation: moveForward 2s linear 1;
+}

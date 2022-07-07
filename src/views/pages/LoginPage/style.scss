@@ -1,0 +1,28 @@
+#login-page{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .logo{
+    width: 150px;
+    margin: 0 auto 30px;
+
+    a{
+      display: inline-block;
+
+      img{
+        max-width: 100%;
+      }
+    }
+  }
+
+  .form-login{
+    width: 600px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 7px rgba(0,0,0,0.2);
+  }
+}
